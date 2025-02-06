@@ -1,0 +1,31 @@
+@mixin fuente($tamaño,$peso:normal,$color:black,$space){
+    font-size: $tamaño;
+    font-weight: $peso;
+    letter-spacing: $space;
+    color: $color;
+    }
+    
+    @mixin imagen($alto:auto,$acho,$borde,$posicion){
+    
+    height: $alto;
+    width:$acho;
+    border-radius: $borde;
+    position: $posicion;
+    object-fit: cover;
+    
+    }
+    
+    @mixin botones( $borde,$posicion,$padding) {
+    
+        border-radius: $borde;
+        position: $posicion;
+        padding: $padding;
+        
+    }
+    
+    @mixin iconos($tamaño,$color:black,$borde,$bg){
+        font-size: $tamaño;
+        color: $color;
+        border-radius: $borde;
+        background-color: $bg;
+        }

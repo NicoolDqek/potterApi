@@ -1,0 +1,37 @@
+@import './components/navbar';
+@import './components/header';
+
+
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'HarryP', sans-serif;
+}
+
+@font-face {
+    font-family: 'HarryP';
+    src: url('/font/HARRYP__.TTF') format('truetype'); /* Ajusta la ruta según tu estructura */
+}
+body{
+ 
+    &::-webkit-scrollbar {
+        width: .1px;               /* width of the entire scrollbar */
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: rgba(41, 41, 40, 0.103);        /* color of the tracking area */
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: rgb(3, 3, 3);    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid rgb(165, 165, 165);  /* creates padding around scroll thumb */
+      }
+}
+
+
+
+
+
+

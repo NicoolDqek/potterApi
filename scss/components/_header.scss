@@ -4,11 +4,12 @@ header{
     margin: 0;
     padding: 0;
     
+    
    
     
  video{
      width: 100%;
-     height:100%;
+     height: min-content;
      position: relative;
      filter: brightness(50%);
     
@@ -82,15 +83,4 @@ header{
 
 
 
-}
-
-.history{
-    background-image: url("https://r4.wallpaperflare.com/wallpaper/297/738/536/harry-potter-house-fantasy-art-men-wallpaper-b970987d518a0d4b0697782fc03146ad.jpg");
-    background-size: cover;
-    width: 100%;
-
-
-    div{
-        height: 40vh;
-    }
 }

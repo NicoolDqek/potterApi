@@ -29,3 +29,13 @@
         border-radius: $borde;
         background-color: $bg;
         }
+
+        
+@mixin svg($color:white,$margin,$display,$padding,$alto){
+color: $color;
+margin: $margin;
+display: $display;
+padding: $padding;
+height: $alto;
+}
+        

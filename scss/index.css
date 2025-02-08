@@ -212,7 +212,147 @@ p {
   position: absolute;
   right: 0;
   bottom: 5%;
-  left: 70%;
+  left: 60%;
+  height: 500px;
+  animation: lechuza 7s infinite;
+  filter: brightness(70%);
+}
+@keyframes lechuza {
+  0% {
+    bottom: 1%;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 1%;
+  }
+}
+
+.fa-angle-double-down {
+  position: absolute;
+  padding: 1rem;
+  border-radius: 50px;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  bottom: 5px;
+  left: 50%;
+  animation: flecha 1.3s ease infinite;
+}
+@keyframes flecha {
+  0% {
+    bottom: 5%;
+  }
+  100% {
+    bottom: 0%;
+  }
+}
+
+.AboutUs {
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/844/91/639/harry-potter-harry-potter-and-the-goblet-of-fire-albus-dumbledore-hd-wallpaper-preview.jpg");
+  background-size: cover;
+  background-position: top;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.AboutUs::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.468);
+  z-index: 0;
+}
+.AboutUs * {
+  position: relative;
+  z-index: 1;
+}
+.AboutUs h1 {
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  margin-left: 59%;
+  margin-top: 10%;
+  animation: titulo 6s infinite;
+}
+@keyframes titulo {
+  0% {
+    bottom: 4%;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 4%;
+  }
+}
+.AboutUs button {
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  font-family: "crimson Roman";
+  width: 200px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.532);
+  padding: 0.5rem;
+  border: 2px solid white;
+}
+
+.AboutUs .compoE {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: scroll;
+  height: 400px;
+  width: 600px;
+  direction: rtl;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  margin-left: 40%;
+}
+.AboutUs .compoE::-webkit-scrollbar {
+  width: 3px;
+}
+.AboutUs .compoE::-webkit-scrollbar-track {
+  background: rgba(41, 41, 40, 0.103);
+}
+.AboutUs .compoE::-webkit-scrollbar-thumb {
+  background-color: rgb(3, 3, 3);
+  border-radius: 20px;
+  border: 3px solid rgb(255, 255, 255);
+}
+.AboutUs .compoE .bi-diamond {
+  text-align: center;
+}
+.AboutUs .btnE {
+  margin-left: 57%;
+  padding-top: 1rem;
+  font-size: 20px;
+}
+.AboutUs p {
+  font-family: "crimson Roman";
+  position: relative;
+}
+.AboutUs .compoE svg {
+  color: white;
+  margin: 10px 0;
+  display: flex;
+  padding: 0;
+  height: 20px;
+}
+.AboutUs .imgE {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
   height: 500px;
   animation: lechuza 4s infinite;
   filter: brightness(70%);
@@ -246,6 +386,47 @@ p {
   100% {
     bottom: 0%;
   }
+}
+
+.update {
+  position: relative;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  background-image: url("https://wallpaperaccess.com/full/314169.jpg");
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.update::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.468);
+  z-index: 0;
+}
+.update * {
+  position: relative;
+  z-index: 1;
+}
+
+.upd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: rgb(249, 249, 249);
 }
 
 * {

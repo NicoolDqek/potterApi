@@ -1,6 +1,6 @@
 const galleryContainer = document.querySelector('.gallery-container');
 const galleryControlsContainer = document.querySelector('.gallery-controls');
-const galleryControls = ['previous', 'next'];
+const galleryControls = ['Anterior', 'Siguiente'];
 const galleryItems = document.querySelectorAll('.gallery-item'); // Corrección del selector
 
 class Carrusel {

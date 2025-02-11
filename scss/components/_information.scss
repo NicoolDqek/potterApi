@@ -64,6 +64,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
+
        
        
     }
@@ -122,8 +124,10 @@
         transform: translateX(-50%);
         width: 430px;
         z-index: 2;
-        background-color: #000000;
+        background-color: #000000c8;
         padding: .5rem;
+        background-image: url('../../assets/img/pngegg\ \(8\).png');
+        background-size: contain;
         
         a{
             color: white;

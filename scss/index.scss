@@ -1,6 +1,7 @@
 @import './components/navbar';
 @import './components/header';
 @import './components/explore';
+@import './components/information';
 @import './components/abutUs';
 @import './components/update';
 
@@ -13,7 +14,7 @@
 
 @font-face {
     font-family: 'HarryP';
-    src: url('/font/HARRYP__.TTF') format('truetype'); /* Ajusta la ruta según tu estructura */
+    src: url('/font/HARRYP__.TTF') format('truetype'); 
 }
 body{
 

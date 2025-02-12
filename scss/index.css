@@ -108,7 +108,7 @@ header svg {
   position: relative;
   padding: 2rem;
   width: 100%;
-  background-image: url("https://r4.wallpaperflare.com/wallpaper/297/738/536/harry-potter-house-fantasy-art-men-wallpaper-b970987d518a0d4b0697782fc03146ad.jpg");
+  background-image: url("https://images4.alphacoders.com/131/thumb-1920-1314765.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -123,7 +123,7 @@ header svg {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.721);
+  background-color: rgba(0, 0, 0, 0.532);
   z-index: 0;
 }
 .history * {
@@ -252,7 +252,7 @@ p {
   position: relative;
   padding: 2rem;
   width: 100%;
-  background-image: url("https://wallpapers.com/images/high/harry-potter-4k-3840-x-2160-wallpaper-rck6y6d36h8i40at.webp");
+  background-image: url("https://images4.alphacoders.com/130/thumb-1920-1308100.jpeg");
   background-size: cover;
   background-position: top;
   height: 105vh;
@@ -270,7 +270,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.733);
+  background-color: rgba(0, 0, 0, 0.441);
   z-index: 0;
 }
 .gallery * {
@@ -466,7 +466,7 @@ p {
   padding: 2rem;
   width: 100%;
   display: flex;
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/844/91/639/harry-potter-harry-potter-and-the-goblet-of-fire-albus-dumbledore-hd-wallpaper-preview.jpg");
+  background-image: url("https://images6.alphacoders.com/130/thumb-1920-1309409.jpg");
   background-size: cover;
   background-position: top;
   flex-direction: column;
@@ -697,11 +697,6 @@ form button {
   box-sizing: border-box;
 }
 
-body {
-  background: #eaeaea;
-  overflow: hidden;
-}
-
 .container {
   position: absolute;
   top: 50%;
@@ -710,7 +705,6 @@ body {
   width: 100%;
   height: 100vh;
   background: #f5f5f5;
-  box-shadow: 0 30px 50px #dbdbdb;
 }
 
 .container .slide .item {
@@ -836,6 +830,80 @@ body {
 .button button:hover {
   background: #ababab;
   color: #fff;
+}
+
+.galleryC {
+  height: auto;
+  background-image: url(https://images2.alphacoders.com/130/thumb-1920-1301377.jpg);
+  background-size: cover;
+  position: relative;
+  margin-top: 100vh;
+  overflow: hidden;
+}
+.galleryC::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.553);
+  z-index: 0;
+}
+.galleryC * {
+  position: relative;
+  z-index: 1;
+}
+.galleryC h1 {
+  text-align: center;
+  padding-top: 3rem;
+  text-transform: uppercase;
+  font-size: 50px;
+  color: white;
+  animation: titulo 4.5s ease-in-out infinite;
+  text-shadow: 8px 3px 8px #1250ed;
+  filter: brightness(80%);
+}
+
+.cards {
+  padding: 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  transform: translatex(5%);
+}
+.cards .card {
+  background-image: url(https://caracol.com.co/resizer/v2/https%3A%2F%2Fcloudfront-us-east-1.images.arcpublishing.com%2Fprisaradioco%2FNGKLCAVLPBHDVKVJJTTHPO2P5U.jpg?auth=c70f3d10a6dd5e56b0b14c78f63d1f42384f51b2b5d10acc9ccf34a88b9e5ec9&height=3456&width=5184&quality=70&smart=true);
+  background-size: cover;
+  padding: 1rem;
+  margin: 10px;
+  border-radius: 30px;
+  position: relative;
+  border-bottom: 2px solid white;
+  box-shadow: 0px 13px 37px -11px rgba(255, 255, 255, 0.598);
+  overflow: hidden;
+}
+.cards .card .infoc {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  color: #eee;
+  z-index: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+  transform: translateY(100%);
+  opacity: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.cards .card:hover .infoc {
+  position: relative;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.infoc h5 {
+  font-family: "crimson Roman";
 }
 
 * {

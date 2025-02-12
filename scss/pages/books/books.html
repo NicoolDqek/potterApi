@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>books</title>
+</head>
+<body>
+    
+    <div class="navbar">
+        <nav>
+        <ul>
+            <li><img src="../../../assets/img/logo-header.png" class="imgnav" alt=""></li>
+            <li class="navb">HOME</li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-diamond" viewBox="0 0 16 16">
+                <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+              </svg>
+            <li class="navb">EXPLORE THE STORE</li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-diamond" viewBox="0 0 16 16">
+                <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+              </svg>
+            <li class="navb">FANTASY WORLD</li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-diamond" viewBox="0 0 16 16">
+                <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+              </svg>
+            <li class="navb">ABOUT US</li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-diamond" viewBox="0 0 16 16">
+                <path d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.48 1.48 0 0 1 0-2.098zm1.4.7a.495.495 0 0 0-.7 0L1.134 7.65a.495.495 0 0 0 0 .7l6.516 6.516a.495.495 0 0 0 .7 0l6.516-6.516a.495.495 0 0 0 0-.7L8.35 1.134z"/>
+              </svg>
+            <li class="navb">KEEP ME UPDATED</li>
+            
+        </ul>
+        
+        </nav>
+        <div class="container">
+
+          <div class="slide">
+            <div class="item" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e3440d-0f91-47a7-82c9-7c72df86c43d/dcu3ave-78a0e3aa-44bb-41d0-b05b-0d7937fec228.jpg/v1/fill/w_1024,h_575,q_75,strp/harry_potter_fanart_08_by_vladislavpantic_dcu3ave-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc1IiwicGF0aCI6IlwvZlwvYTllMzQ0MGQtMGY5MS00N2E3LTgyYzktN2M3MmRmODZjNDNkXC9kY3UzYXZlLTc4YTBlM2FhLTQ0YmItNDFkMC1iMDViLTBkNzkzN2ZlYzIyOC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZXSmu5GMoy0JDnD9QoCGL7uBklcw3hTZQcrXU2fQztk);">
+              <div class="content">
+                  <div class="name">Harry poter Universo</div>
+                  <div class="des">El mundo de Harry Potter es un universo mágico oculto dentro de la sociedad muggle, lleno de hechizos, criaturas fantásticas y una lucha entre el bien y el mal, con Hogwarts como epicentro de la magia. ✨</div>
+                  <button>See More</button>
+              </div>
+          </div>
+            <div class="item" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e3440d-0f91-47a7-82c9-7c72df86c43d/dcqmw3l-80bb0a93-9c86-420f-977b-538ed6dcf012.jpg/v1/fill/w_1024,h_577,q_75,strp/harry_potter_and_the_philosopher_s_stone_fanart_05_by_vladislavpantic_dcqmw3l-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc3IiwicGF0aCI6IlwvZlwvYTllMzQ0MGQtMGY5MS00N2E3LTgyYzktN2M3MmRmODZjNDNkXC9kY3FtdzNsLTgwYmIwYTkzLTljODYtNDIwZi05NzdiLTUzOGVkNmRjZjAxMi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.vJcM50TbJCYZUj56xbES_bCAtaG1a1CEu3Yz75kAxQM);">
+              <div class="content">
+                  <div class="name">Harry potter Y la piedra Filosofal</div>
+                  <div class="des">Harry Potter, un niño huérfano que vive con sus crueles tíos, descubre en su cumpleaños número 11 que es un mago y que ha sido aceptado en el Colegio Hogwarts de Magia y Hechicería. Allí tiene amigos como Ron y Hermione, y enemigos como Draco Malfoy. Descubre su conexión con el malvado Lord Voldemort y evita que regrese al poder al impedir que obtenga la Piedra Filosofal.</div>
+                  <button>See More</button>
+              </div>
+          </div>
+              <div class="item" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e3440d-0f91-47a7-82c9-7c72df86c43d/de9x1yn-38bb2336-9228-4bc1-b926-8f7a992747ab.jpg/v1/fill/w_1024,h_649,q_75,strp/harry_potter_and_the_chamber_of_secrets__fanart_19_by_vladislavpantic_de9x1yn-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjQ5IiwicGF0aCI6IlwvZlwvYTllMzQ0MGQtMGY5MS00N2E3LTgyYzktN2M3MmRmODZjNDNkXC9kZTl4MXluLTM4YmIyMzM2LTkyMjgtNGJjMS1iOTI2LThmN2E5OTI3NDdhYi5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.sf4TQSRopMmHCzmYgcOlgbKDA2Gv5YEThA7dacYVN5k);">
+                  <div class="content">
+                      <div class="name">Harry Potter y la cámara secreta</div>
+                      <div class="des">Harry regresa a Hogwarts a pesar de las advertencias de Dobby, un elfo doméstico. En el colegio, ocurren ataques misteriosos que dejan a estudiantes petrificados. Se revela que la Cámara Secreta ha sido abierta y que un monstruo ataca a los hijos de muggles.</div>
+                      <button>See More</button>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a9e3440d-0f91-47a7-82c9-7c72df86c43d/dennv08-83084b9b-4322-4841-af8d-1e2883dbe795.jpg/v1/fill/w_1024,h_503,q_75,strp/harry_potter_and_the_prisoner_of_azkaban_fanart_06_by_vladislavpantic_dennv08-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTAzIiwicGF0aCI6IlwvZlwvYTllMzQ0MGQtMGY5MS00N2E3LTgyYzktN2M3MmRmODZjNDNkXC9kZW5udjA4LTgzMDg0YjliLTQzMjItNDg0MS1hZjhkLTFlMjg4M2RiZTc5NS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Cc6zaYkjEO8O_6Hw1vc_O-Y_HOoAaMUVWt0vn1RmonM);">
+                  <div class="content">
+                      <div class="name">Harry Potter y el prisionero de Azkaban</div>
+                      <div class="des">Sirius Black, un peligroso prisionero, escapa de Azkaban y aparentemente busca a Harry. A lo largo del año, se descubren secretos sobre el pasado de los padres de Harry y su relación con Sirius, quien en realidad es su padrino y no el traidor que todos creen.</div>
+                      <button>See More</button>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(https://cdna.artstation.com/p/assets/images/images/009/809/640/large/tiago-da-silva-harrypotter.jpg?1521018821);">
+                  <div class="content">
+                      <div class="name">Harry Potter- El cáliz de fuego</div>
+                      <div class="des">Hogwarts es sede del Torneo de los Tres Magos, pero el nombre de Harry está misteriosamente introducido en la competencia. A pesar del peligro, debes superar tres pruebas mortales. En la última, es transportado a un cementerio donde Voldemort regresa a la vida con ayuda de sus seguidores. </div>
+                      <button>See More</button>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(https://wallpapercave.com/wp/wp8187815.jpg);">
+                  <div class="content">
+                      <div class="name">Harry Potter y la Orden del Fénix</div>
+                      <div class="des">El Ministerio de Magia niega el regreso de Voldemort, mientras Dumbledore y un grupo secreto llamado la Orden del Fénix intentan luchar contra él. En Hogwarts, la profesora Umbridge impone un régimen dictatorial. Harry y sus amigos crean el Ejército de Dumbledore para aprender a defenderse. </div>
+                      <button>See More</button>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(https://cdna.artstation.com/p/assets/images/images/052/268/466/large/jamie-slimmon-hp6.jpg?1659379535);">
+                  <div class="content">
+                      <div class="name">Potter y el príncipe mestizo</div>
+                      <div class="des">Dumbledore comienza a entrenar a Harry para la lucha final contra Voldemort, mostrándole recuerdos sobre su pasado y los Horrocruxes, objetos en los que ha dividido su alma. Mientras tanto, Draco Malfoy recibe una misión peligrosa y Severus Snape jura protegerlo.</div>
+                      <button>See More</button>
+                  </div>
+              </div>
+              <div class="item" style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0fcab0e9-6020-402c-adf1-e294ed06e1eb/d86yhrf-ea7bc55c-c661-4e37-a250-f0a80afc0089.jpg/v1/fill/w_900,h_587,q_75,strp/the_seven_horcruxes_by_incantata_d86yhrf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTg3IiwicGF0aCI6IlwvZlwvMGZjYWIwZTktNjAyMC00MDJjLWFkZjEtZTI5NGVkMDZlMWViXC9kODZ5aHJmLWVhN2JjNTVjLWM2NjEtNGUzNy1hMjUwLWYwYTgwYWZjMDA4OS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.a_sW1175udCmEbV0XnX_HM22kcDEFbncTHTHISwIh4o);">
+                  <div class="content">
+                      <div class="name">Harry Potter 7 y las reliquias de la muerte</div>
+                      <div class="des">Harry, Ron y Hermione abandonan Hogwarts para buscar y destruir los Horrocruxes. En su viaje descubren la historia de las Reliquias de la Muerte, objetos legendarios que podrían hacer invencible a su dueño. </div>
+                      <button>See More</button>
+                  </div>
+              </div>
+           
+  
+          </div>
+  
+          <div class="button">
+              <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+              <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+  
+  </div>
+        
+        </div>
+
+    <script  >
+      let next = document.querySelector('.next')
+let prev = document.querySelector('.prev')
+
+next.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').appendChild(items[0])
+})
+
+prev.addEventListener('click', function(){
+    let items = document.querySelectorAll('.item')
+    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+})
+    </script>
+</body>
+</html>

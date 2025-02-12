@@ -56,6 +56,12 @@ carrusel_nuevo.useControls();
 
 
 
+
+
+
+
+
+
 fetch('https://potterapi-fedeperin.vercel.app/es/houses')
 .then(res => res.json())
 .then(res => {

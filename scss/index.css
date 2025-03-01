@@ -881,6 +881,11 @@ form button {
   border-bottom: 2px solid white;
   box-shadow: 0px 13px 37px -11px rgba(255, 255, 255, 0.598);
   overflow: hidden;
+  width: 180px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .cards .card .infoc {
   height: 50%;
@@ -900,6 +905,10 @@ form button {
   position: relative;
   transform: translateY(0);
   opacity: 1;
+}
+.cards .card img {
+  height: 200px;
+  border-radius: 20px;
 }
 
 .infoc h5 {

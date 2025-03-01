@@ -92,19 +92,12 @@
 
 <div class="galleryC" >
     <h1>Personajes destacados</h1>
-   <div class="cards">
-    <div class="card">
-        <img src="../../../assets/img/pngwing.com (3).png" alt="">
-        <div class="infoc">
-            <h5>nombre</h5>
-            <h5>edad</h5>
-            <h5>casa</h5>
-        </div>
-    </div>
+   <div class="cards" id="cards">
+    
    
 </div>
 
-    <script  >
+    <script>
       let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 
@@ -117,6 +110,50 @@ prev.addEventListener('click', function(){
     let items = document.querySelectorAll('.item')
     document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
 })
+
+const characters = 'https://potterapi-fedeperin.vercel.app/es/characters';
+  fetch(characters)
+    .then(res => res.json())
+    .then(res => {
+      console.log(res);
+
+      // Crear los personajes
+      res.forEach(personaje => {
+        // Crear el contenedor principal de la tarjeta
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        // Crear la imagen del personaje
+        const img = document.createElement('img');
+        img.src = personaje.image; // Asegúrate que 'image' esté presente en los datos
+        img.alt = "personaje";
+
+        
+        const info = document.createElement('div');
+        info.classList.add('infoc');
+
+        // Crear y añadir nombre, nacimiento y casa
+        const name = document.createElement('h5');
+        name.textContent = personaje.fullName || 'Nombre no disponible'; 
+
+        const birth = document.createElement('h5');
+        birth.textContent = personaje.birthdate || 'Fecha de nacimiento no disponible'; 
+
+        const houses = document.createElement('h5');
+        houses.textContent = personaje.hogwartsHouse || 'Casa no disponible'; 
+        info.appendChild(name);
+        info.appendChild(birth);
+        info.appendChild(houses);
+        card.appendChild(img);
+        card.appendChild(info);
+
+        
+        document.getElementById('cards').appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error('Error al cargar los personajes:', error);
+    })
     </script>
 </body>
 </html>

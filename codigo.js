@@ -21,11 +21,11 @@ class Carrusel {
     }
 
     setCurrentState(direction) {
-        if (direction.classList.contains('gallery-controls-previous')) {
-            this.carruselArray.unshift(this.carruselArray.pop()); // Mueve el último al inicio
+         if (direction.classList.contains('gallery-controls-Anterior')) { 
+        this.carruselArray.unshift(this.carruselArray.pop()); // Mueve el último al inicio
         } else {
             this.carruselArray.push(this.carruselArray.shift()); // Mueve el primero al final
-        }
+        }   
         this.updateGallery();
     }
 
@@ -43,6 +43,7 @@ class Carrusel {
         triggers.forEach(control => {
             control.addEventListener('click', (e) => {
                 e.preventDefault();
+                console.log("Botón presionado:", control.className);
                 this.setCurrentState(control);
             });
         });
@@ -62,16 +63,58 @@ carrusel_nuevo.useControls();
 
 
 
+
 fetch('https://potterapi-fedeperin.vercel.app/es/houses')
 .then(res => res.json())
 .then(res => {
     console.log(res)
 })
-fetch('https://potterapi-fedeperin.vercel.app/es/characters')
+
+const characters='https://potterapi-fedeperin.vercel.app/es/characters'
+fetch(characters)
 .then(res => res.json())
 .then(res => {
     console.log(res)
-})
+
+    // Crear los personajes
+    res.forEach(personaje => {
+        // Crear el contenedor principal de la tarjeta
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        // Crear la imagen del personaje
+        const img = document.createElement('img');
+        img.src = personaje.image; // Asegúrate que 'image' esté presente en los datos
+        img.alt = "personaje";
+
+        
+        const info = document.createElement('div');
+        info.classList.add('infoc');
+
+        // Crear y añadir nombre, nacimiento y casa
+        const name = document.createElement('h5');
+        name.textContent = personaje.fullName || 'Nombre no disponible'; 
+
+        const birth = document.createElement('h5');
+        birth.textContent = personaje.birthdate || 'Fecha de nacimiento no disponible'; 
+
+        const houses = document.createElement('h5');
+        houses.textContent = personaje.hogwartsHouse || 'Casa no disponible'; 
+        info.appendChild(name);
+        info.appendChild(birth);
+        info.appendChild(houses);
+        card.appendChild(img);
+        card.appendChild(info);
+
+        
+        document.getElementById('cards').appendChild(card);
+      });
+    })
+    .catch(error => {
+      console.error('Error al cargar los personajes:', error);
+    })
+
+
 fetch('https://potterapi-fedeperin.vercel.app/es/books')
 .then(res => res.json())
 .then(res => {
@@ -82,3 +125,9 @@ fetch('https://potterapi-fedeperin.vercel.app/es/spells')
 .then(res => {
     console.log(res)
 })
+
+
+
+
+
+
